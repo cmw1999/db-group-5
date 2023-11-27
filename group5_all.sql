@@ -1,3 +1,16 @@
+DROP TABLE IF EXISTS statistics;
+DROP TABLE IF EXISTS injury;
+DROP TABLE IF EXISTS playertrade;
+DROP TABLE IF EXISTS playerpositions;
+DROP TABLE IF EXISTS player;
+DROP TABLE IF EXISTS teamtrade;
+DROP TABLE IF EXISTS teamgame;
+DROP TABLE IF EXISTS team;
+DROP TABLE IF EXISTS game;
+DROP TABLE IF EXISTS positions;
+DROP TABLE IF EXISTS trade;
+DROP TABLE IF EXISTS conference;
+
 CREATE DATABASE group_5;
 
 CREATE TABLE trade (
@@ -283,3 +296,6 @@ INSERT INTO statistics (player_id, statistics_rec_yds, statistics_rec_rec, stati
 ((SELECT player_id FROM player WHERE player_first_name = 'Keenan' AND player_last_name = 'Allen'), 895, 73, 6, 41),
 ((SELECT player_id FROM player WHERE player_first_name = 'Stefon' AND player_last_name = 'Diggs'),895, 73, 6, 41)
 ;
+
+INSERT INTO player (player_first_name, player_last_name, player_salary, team_id)
+VALUES ('John', 'Doe', 5000000, 1);
