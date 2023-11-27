@@ -11,7 +11,7 @@ GROUP BY
 
 #2
 SELECT DISTINCT
-	CONCAT(player_first_name, ‘ ‘, player_last_name) AS player_name,
+	CONCAT(player_first_name, " ",  player_last_name) AS player_name,
 	player.player_id,
 	player_salary,
 	team_name
